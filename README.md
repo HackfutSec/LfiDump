@@ -56,10 +56,10 @@ Example of `payloads.json` format:
 
 ### **1. Running the Script**
 
-After cloning the repository and installing dependencies, run the `lfi.py` script:
+After cloning the repository and installing dependencies, run the `LfiDump.py` script:
 
 ```bash
-python lfi.py
+python LfiDump.py
 ```
 
 ### **2. Configuration Options**
