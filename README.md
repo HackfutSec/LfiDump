@@ -2,6 +2,8 @@
 
 **LfiDump** is a Python-based Local File Inclusion (LFI) vulnerability scanner that helps security professionals detect potential LFI vulnerabilities in web applications. This tool uses a set of predefined payloads to manipulate URLs and checks for vulnerable file inclusion points that could potentially be exploited. The scanner uses multithreading for efficient scanning of multiple URLs simultaneously and provides a detailed output of the results.
 
+lfi https://github.com/emadshanab/LFI-Payload-List
+    https://raw.githubusercontent.com/emadshanab/LFI-Payload-List/master/LFI%20payloads.txt
 ---
 
 ## **Features**
