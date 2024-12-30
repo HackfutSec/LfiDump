@@ -93,7 +93,7 @@ def check_vulnerability(url, output_file):
                     f.write(url + '\n')
             print(f"\n{YELLOW_BOLD}[>>]{RESET} {WHITE_BOLD}{url}{RESET} --> {GREEN_BOLD}[Vuln]{RESET}")
         else:
-            print(f"{RED_BOLD}[x]{RESET} {WHITE_BOLD}{url}{RESET} --> {RED_BOLD}[Not Vuln]{RESET}")
+            print(f"\n{RED_BOLD}[x]{RESET} {WHITE_BOLD}{url}{RESET} --> {RED_BOLD}[Not Vuln]{RESET}")
     except requests.RequestException as e:
         with error_lock:
             with open('errors.log', 'a') as f:
@@ -109,7 +109,7 @@ def main():
 
     if choice == '2':
         # Handle list of URLs
-        urls_file = input(f"{YELLOW_BOLD}Give me your URL list file: {RESET}").strip()
+        urls_file = input(f"\n[] {YELLOW_BOLD}Give me your URL list file: {RESET}").strip()
         
         if not os.path.isfile(urls_file):
             print(f"\n[✘] {RED_BOLD}Error:{RESET} The provided URL list file does not exist.")
